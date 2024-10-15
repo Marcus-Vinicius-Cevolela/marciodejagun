@@ -7,12 +7,13 @@ const Timer = () => {
     useEffect(() => {
         const targetDate = new Date('2024-10-31T00:00:00');
         const updateCountdown = () => {
-            const now = new Date();
-            const difference = targetDate - now;
+            const now = new Date().getTime(); // Converte a data atual para milissegundos
+            const targetTime = targetDate.getTime(); // Converte 'targetDate' para milissegundos
+            const difference = targetTime - now;
 
             const days = Math.floor(difference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-            const minutes = Math.floor((difference / 1000 / 60) % 60);
+            const minutes = Math.floor((difference / (1000 * 60)) % 60);
             const seconds = Math.floor((difference / 1000) % 60);
 
             setTimeLeft({ days, hours, minutes, seconds });
