@@ -17,7 +17,7 @@ export function CardsProjetos() {
 
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2 text-center">{projeto.title}</div>
-                        <p className="text-base text-center">{projeto.description}</p>
+                        <p className="text-xs text-justify lg:text-base lg:text-center ">{projeto.description}</p>
                     </div>
                 </a>
             ))}

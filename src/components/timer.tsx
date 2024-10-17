@@ -7,8 +7,8 @@ const Timer = () => {
     useEffect(() => {
         const targetDate = new Date('2024-10-31T00:00:00');
         const updateCountdown = () => {
-            const now = new Date().getTime(); // Converte a data atual para milissegundos
-            const targetTime = targetDate.getTime(); // Converte 'targetDate' para milissegundos
+            const now = new Date().getTime();
+            const targetTime = targetDate.getTime();
             const difference = targetTime - now;
 
             const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -25,12 +25,27 @@ const Timer = () => {
     }, []);
 
     return (
-        <div className="flex justify-center items-center p-4 bg-red-900 text-white">
-            <div className="text-center space-x-4">
-                <span className="text-2xl font-bold">{timeLeft.days}</span> dias
-                <span className="text-2xl font-bold">{timeLeft.hours}</span> horas
-                <span className="text-2xl font-bold">{timeLeft.minutes}</span> minutos
-                <span className="text-2xl font-bold">{timeLeft.seconds}</span> segundos
+        <div className="flex justify-center items-center p-2 bg-red-900 text-white">
+            <div className="text-center text-amber-400">
+                <p className="text-sm   lg:text-lg">Disponível por:</p>
+                <div className="flex justify-between text-center space-x-2 sm:space-x-4 flex-wrap">
+                    <div className="flex items-center">
+                        <span className="text-lg sm:text-2xl font-bold">{timeLeft.days}</span>
+                        <span className="ml-1 text-sm sm:text-base">dias</span>
+                    </div>
+                    <div className="flex items-center">
+                        <span className="text-lg sm:text-2xl font-bold">{timeLeft.hours}</span>
+                        <span className="ml-1 text-sm sm:text-base">horas</span>
+                    </div>
+                    <div className="flex items-center">
+                        <span className="text-lg sm:text-2xl font-bold">{timeLeft.minutes}</span>
+                        <span className="ml-1 text-sm sm:text-base">minutos</span>
+                    </div>
+                    <div className="flex items-center">
+                        <span className="text-lg sm:text-2xl font-bold">{timeLeft.seconds}</span>
+                        <span className="ml-1 text-sm sm:text-base">segundos</span>
+                    </div>
+                </div>
             </div>
         </div>
     );
