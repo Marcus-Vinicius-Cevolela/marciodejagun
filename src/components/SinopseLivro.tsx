@@ -18,7 +18,7 @@ export function SinopseLivro() {
                     <div className="text-center lg:text-left max-w-[820px] mx-auto lg:mx-0 mt-12">
                         <h1 className="text-zinc-900 text-2xl font-bold mb-2 text-center pb-4 lg:text-3xl lg:font-bold lg:mb-4">Sobre o livro</h1>
                         <p className="text-zinc-900 text-base font-semibold mb-4 text-justify lg:text-center lg:text-xl">
-                            Filosofia Descolonial do Candomblé Nagô propõe um mergulho nas trocas culturais e as ressignificações teológicas, geradas pelo sincretismo, que moldaram essa rica tradição. O livro vai além de questões religiosas e analisa influências que vêm de diversas fontes: afro-islâmicas, afro-católicas, inter-africanas e afro-indígenas, tanto antes quanto depois da diáspora. Mais do que isso, o texto também mostra como o racismo e o etnocentrismo afetaram a forma como a religiosidade e a cultura afro-brasileira foram vistas e compreendidas ao longo do tempo.
+                            Filosofia Descolonial do Candomblé Nagô propõe um mergulho nas trocas culturais e as ressignificações teológicas, geradas pelo sincretismo, que moldaram essa rica tradição. O livro vai além de questões religiosas e analisa influências que vêm de diversas fontes: afro-islâmicas, afrocatólicas, inter-africanas e afro-indígenas, tanto antes quanto depois da diáspora. Mais do que isso, o texto também mostra como o racismo e o etnocentrismo afetaram a forma como a religiosidade e a cultura afro-brasileira foram vistas e compreendidas ao longo do tempo.
                         </p>
 
                         <div className="pt-3 flex justify-center lg:justify-center space-x-6">
