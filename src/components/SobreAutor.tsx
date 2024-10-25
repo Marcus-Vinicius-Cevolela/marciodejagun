@@ -6,10 +6,7 @@ export function SobreAutor() {
     return (
         <section className="w-[100%] h-[100%] p-11 m-auto flex-2 border" id="SobreAutor">
             <Container>
-                {/* Ajuste de layout: coluna em telas pequenas, linha em telas grandes */}
                 <div className="mx-auto pb-5 mt-12 flex flex-col lg:flex-row lg:justify-center lg:items-start">
-                    
-                    {/* Texto centralizado em telas pequenas, alinhado à esquerda em telas grandes */}
                     <div className="text-center lg:text-left max-w-[820px] mx-auto lg:mx-0 mt-12 lg:mt-">
                         <h1 className="text-zinc-900 text-2xl font-bold mb-2 text-center pb-4 lg:text-3xl lg:font-bold lg:mb-4">Sobre o autor</h1>
                         <p className="text-zinc-900 text-base font-semibold mb-4 text-justify lg:text-center lg:text-xl">
@@ -17,18 +14,13 @@ export function SobreAutor() {
                         </p>
                     </div>
 
-                    {/* Imagem: acima do texto em mobile, à direita em desktop, com margem de 150px em telas grandes */}
-                    <div className="mx-auto pb-5 lg:pb-0 lg:pr-10 lg:mt-0 lg:ml-[315px]">
+                    <div className="flex justify-center w-full lg:pl-[150px]">
                         <Image
-                            className="block w-[200px] h-[365px] md:w-[250px] md:h-[415px] lg:w-[300px] lg:h-[465px]"
+                            className="block w-[40vw] max-w-[250px] min-w-[150px] h-auto object-contain mx-auto"
                             src={Autor}
                             alt="Escritor Márcio de Jagun"
-                            width={350} // Largura máxima para garantir a proporção
-                            height={240} // Altura máxima para garantir a proporção
-                            style={{ objectFit: 'contain' }} // Mantém a proporção da imagem
                         />
                     </div>
-
                 </div>
             </Container>
         </section>

@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         azul: "#1d00c6",
       },
+      fontFamily: {
+        garamond: ['"Adobe Garamond Pro"', 'serif'], // Registra a fonte
+      },
     },
   },
   plugins: [],

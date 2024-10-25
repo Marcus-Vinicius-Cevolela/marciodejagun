@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "marcio-de-jagun": "file:",
     "next": "14.1.0",
     "react": "^18",

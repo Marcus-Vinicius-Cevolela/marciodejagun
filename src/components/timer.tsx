@@ -5,7 +5,7 @@ const Timer = () => {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
     useEffect(() => {
-        const targetDate = new Date('2024-10-31T00:00:00');
+        const targetDate = new Date('2024-11-06T18:30:00');
         const updateCountdown = () => {
             const now = new Date().getTime();
             const targetTime = targetDate.getTime();
@@ -25,9 +25,9 @@ const Timer = () => {
     }, []);
 
     return (
-        <div className="flex justify-center items-center p-2 bg-red-900 text-white">
+        <div className="flex justify-center items-center p-2 bg-red-900 text-white rounded-md">
             <div className="text-center text-amber-400">
-                <p className="text-sm   lg:text-lg">Disponível por:</p>
+                <p className="text-sm font-bold lg:text-lg">Lançamento em:</p>
                 <div className="flex justify-between text-center space-x-2 sm:space-x-4 flex-wrap">
                     <div className="flex items-center">
                         <span className="text-lg sm:text-2xl font-bold">{timeLeft.days}</span>
