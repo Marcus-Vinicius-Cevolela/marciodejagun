@@ -13,7 +13,6 @@ export function Video() {
                             frameBorder="0"
                             allowFullScreen
                         >
-                            
                         </iframe>
                     </div>
                 </div>

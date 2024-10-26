@@ -11,7 +11,7 @@ export function SinopseLivro() {
                         <Image
                             className="block w-[40vw] max-w-[250px] min-w-[150px] h-auto object-contain mx-auto"
                             src={Livro}
-                            alt="Capa do livro filosofia descolonial"
+                            alt="Capa do livro Filosofia Descolonial Do Candomblé Nagô"
                         />
                     </div>
 
