@@ -5,6 +5,7 @@ import Nko from "@/assets/Nko_Yorubá_-_Márcio_de_Jagun.png"
 import SalaDeAula from "@/assets/A_Sala_de_Aula_Não_Cabe_no_Mundo_-_Márcio_de_Jagun-removebg-preview.png"
 import Abilayo from "@/assets/Abilayo_-_Márcio_de_Jagun.png"
 import Akin from "@/assets/Akin_-_Márcio_de_Jagun.png"
+import Filosofia from "@/assets/filosofia_descolonial.png"
 
 const ProjetosInfo = [
   {
@@ -56,6 +57,13 @@ const ProjetosInfo = [
     description: 'Esta obra oferece ao universo infantil, de forma leve e poética, a necessária reflexão sobre temas como a morte, a doença e a fé, tudo em um ambiente leve e lúdico, contextualizado na cultura iorubá. “Akin e a Visita de Àrùn” é uma obra que se revela como uma ferramenta útil para implementação da Lei nº 11.645/2008 em sala de aula, assim como no dia a dia de qualquer cidadão, sendo um valioso elemento para trabalhar a quebra de preconceito e intolerância étnico-religiosa.',
     link: 'https://www.livrarialitteris.com.br/akin',
   },
+  // {
+  //   slug: 'projeto-8',
+  //   title: 'Filosofia Descolonial do Candomblé Nagô',
+  //   image: Filosofia,
+  //   description: 'Filosofia Descolonial do Candomblé Nagô propõe um mergulho nas trocas culturais e as ressignificações teológicas, geradas pelo sincretismo, que moldaram essa rica tradição. O livro vai além de questões religiosas e analisa influências que vêm de diversas fontes: afro-islâmicas, afrocatólicas, inter-africanas e afro-indígenas, tanto antes quanto depois da diáspora. Mais do que isso, o texto também mostra como o racismo e o etnocentrismo afetaram a forma como a religiosidade e a cultura afro-brasileira foram vistas e compreendidas ao longo do tempo.',
+  //   link: 'https://www.livrarialitteris.com.br/filosofia-descolonial',
+  // },
   
 ];
 

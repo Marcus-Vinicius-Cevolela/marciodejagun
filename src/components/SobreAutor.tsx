@@ -4,7 +4,7 @@ import Autor from "@/assets/autor.jpg";
 
 export function SobreAutor() {
     return (
-        <section className="w-[100%] h-[100%] p-11 m-auto flex-2 border" id="SobreAutor">
+        <section className="w-[100%] h-[100%] p-11 m-auto flex-2" id="SobreAutor">
             <Container>
                 <div className="mx-auto pb-5 mt-12 flex flex-col lg:flex-row lg:justify-center lg:items-start">
                     <div className="text-center lg:text-left max-w-[820px] mx-auto lg:mx-0 mt-12 lg:mt-">
