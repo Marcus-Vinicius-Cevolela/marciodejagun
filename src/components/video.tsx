@@ -8,7 +8,7 @@ export function Video() {
                     <h1 className="text-zinc-900 text-2xl font-bold mb-2 text-center pb-4 lg:text-3xl lg:font-bold lg:mb-4">Veja um recado de nosso autor!</h1>
                     <div className="relative overflow-hidden">
                         <iframe 
-                            src="https://res.cloudinary.com/dmpeh2wfy/video/upload/v1729987872/marcio-de-jagun-editado.mp4" 
+                            src="https://res.cloudinary.com/dmpeh2wfy/video/upload/v1730052387/marcio-de-jagun-editado.mp4" 
                             className="mx-auto w-[320px] h-[180px] md:w-[700px] md:h-[400px] lg:w-[848px] lg:h-[478px]"
                             frameBorder="0"
                             allowFullScreen
