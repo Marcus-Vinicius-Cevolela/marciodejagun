@@ -9,7 +9,7 @@ export function Video() {
                     <div className="relative overflow-hidden">
                         <iframe 
                             src="https://res.cloudinary.com/dmpeh2wfy/video/upload/v1729987872/marcio-de-jagun-editado.mp4" 
-                            className="mx-auto w-[320px] h-[180px] md:w-[800px] md:h-[400px] lg:w-[848px] lg:h-[478px]"
+                            className="mx-auto w-[320px] h-[180px] md:w-[700px] md:h-[400px] lg:w-[848px] lg:h-[478px]"
                             frameBorder="0"
                             allowFullScreen
                         >
