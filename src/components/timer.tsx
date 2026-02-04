@@ -1,15 +1,30 @@
 "use client";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const Timer = () => {
-    const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+    });
 
     useEffect(() => {
-        const targetDate = new Date('2024-11-06T18:30:00');
+        const targetDate = new Date("2024-11-06T18:30:00").getTime();
+
         const updateCountdown = () => {
             const now = new Date().getTime();
-            const targetTime = targetDate.getTime();
-            const difference = targetTime - now;
+            const difference = targetDate - now;
+
+            if (difference <= 0) {
+                setTimeLeft({
+                    days: 0,
+                    hours: 0,
+                    minutes: 0,
+                    seconds: 0,
+                });
+                return;
+            }
 
             const days = Math.floor(difference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
@@ -19,6 +34,7 @@ const Timer = () => {
             setTimeLeft({ days, hours, minutes, seconds });
         };
 
+        updateCountdown();
         const timerId = setInterval(updateCountdown, 1000);
 
         return () => clearInterval(timerId);
