@@ -5,7 +5,7 @@ import { Cabecalho } from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Pré-Venda | Márcio de Jagun | Litteris Editora",
-  description: "Pré-Venda do livro Filosofia Descolonial Do Candomblé Nagô do autor Márcio de Jagun - Litteris Editora ",
+  description: "Pré-Venda do livro Filosofia Descolonial Do Candomblé Nagô do autor Márcio de Jagun -- Litteris Editora ",
 };
 
 export default function RootLayout({
